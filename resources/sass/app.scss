@@ -1,0 +1,28 @@
+
+// imports
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+
+
+
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+}
+
+@import './partials/vars';
+@import './partials/utilities';
+
+@import './partials/sections/header';
+@import './partials/sections/comics';
+@import './partials/sections/footer';

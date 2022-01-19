@@ -1,0 +1,37 @@
+header {
+	@include flex(row, flex-start, stretch);
+	.brand {
+		width: 80px;
+		display: inline-block;
+		img {
+			max-width: 100%;
+			margin-block: $sp-08;
+		}
+	}
+	nav {
+		@include flex;
+		min-height: 100%;
+		margin-left: $sp-30;
+	}
+	ul {
+		@include flex(row, space-between, center);
+		height: 100%;
+		width: 100%;
+		li {
+			height: 100%;
+			margin-right: $sp-20;
+			list-style-type: none;
+			a {
+				@include flex(row, center, center);
+				color: $bg-color;
+				border-bottom: 3px solid transparent;
+				font-weight: bold;
+				height: 100%;
+				&.active {
+					color: $accent-col;
+					border-bottom-color: $accent-col;
+				}
+			}
+		}
+	}
+}

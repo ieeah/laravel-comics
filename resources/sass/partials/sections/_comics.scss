@@ -1,0 +1,41 @@
+
+main {
+	background-color: $bg-color;
+	color: $clear-col;
+	padding-block: $sp-40 $sp-20;
+	min-height: calc(100vh - 271.9px);
+}
+
+
+.comics {
+	@include flex(row, space-between, stretch);
+	flex-wrap: wrap;
+}
+
+
+.magazine_card {
+	width: calc(100% / 6);
+	padding-inline: $sp-10;
+	margin-bottom: $sp-20;
+	color: $clear-col;
+	.top_card {
+		display: inline-block;
+		width: 100%;
+		aspect-ratio: 1;
+		overflow: hidden;
+		img {
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+	.bottom_card h3 {
+		margin-top: $sp-10;
+		font-weight: 400;
+		font-size: .95rem;
+	}
+}
+
+.load_more {
+	display: flex;
+	justify-content: center;
+}

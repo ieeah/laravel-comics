@@ -1,0 +1,38 @@
+// layout
+.container {
+	width: 65%;
+	margin: 0 auto;
+}
+
+//buttons
+.btn,
+.btn.bordered {
+	color: $clear-col;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btn {
+	padding: $sp-07 $sp-35;
+	background-color: $accent-col;
+	border: none;
+}
+
+.btn.bordered {
+	border: 2px solid $accent-col;
+	background-color: transparent;
+	padding: $sp-07 $sp-10 ;
+}
+
+//typography
+.text-center {
+	text-align: center;
+}
+
+// mixins
+@mixin flex($direction: row, $justify: center, $align: stretch) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
