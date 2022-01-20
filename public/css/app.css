@@ -174,18 +174,28 @@ main.home_main {
   background-color: #0182f9;
 }
 .comic_main .content {
-  padding-block: 200px 3.5rem;
+  padding-block: 200px 150px;
 }
 .comic_main .content .comic_details {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+}
+.comic_main .content .comic_details h5 {
+  width: 100%;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #7d7d7d;
+  letter-spacing: -1px;
 }
 .comic_main .content .comic_details .comic_data {
   width: 65%;
 }
 .comic_main .content .comic_details .comic_data .title {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
+  letter-spacing: -2px;
+  color: #103e5f;
 }
 .comic_main .content .comic_details .comic_data .stock {
   background-color: #55ba5a;
@@ -220,8 +230,19 @@ main.home_main {
   font-size: 0.95rem;
   color: #fff;
 }
+.comic_main .content .comic_details .comic_data .description {
+  text-transform: none;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #7d7d7d;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .comic_main .content .comic_details .ads {
   width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .comic_main .inner_container {
   width: 1020px;

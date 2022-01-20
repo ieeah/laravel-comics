@@ -41,15 +41,25 @@
 		}
 	}
 	.content {
-		padding-block: 200px $sp-35;
+		padding-block: 200px 150px;
 		.comic_details {
 			display: flex;
-			align-items: center;
+			flex-wrap: wrap;
+			h5 {
+				width: 100%;
+				text-align: right;
+				font-size: 1rem;
+				font-weight: bold;
+				color: $social-col;
+				letter-spacing: -1px;
+			}
 			.comic_data {
 				width: 65%;
 				.title {
-					font-size: $sp-30;
+					font-size: $sp-20;
 					margin-bottom: $sp-15;
+					letter-spacing: -2px;
+					color: $title-col;
 				}
 				.stock {
 					background-color: $price-col;
@@ -84,10 +94,20 @@
 						color: $clear-col;
 					}
 				}
+				.description {
+					text-transform: none;
+					margin-top: $sp-20;
+					font-weight: bold;
+					color: $social-col;
+					font-size: 1rem;
+					line-height: $sp-15;
+				}
 			}
 			.ads {
 				width: 35%;
-
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
 			}
 		}
 	}

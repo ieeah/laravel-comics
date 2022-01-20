@@ -26,6 +26,7 @@
 		</div>
 		<section class="content">
 			<div class="comic_details inner_container">
+				<h5>ADVERTISEMENT</h5>
 				<div class="comic_data">
 					<h1 class="title">{{$fumetto['title']}}</h1>
 					<div class="stock">
@@ -42,10 +43,12 @@
 							<i class="fas fa-sort-down"></i>
 						</div>
 					</div>
+					<p class="description">
+						{{ $fumetto['description'] }}
+					</p>
 				</div>
 				<div class="ads">
-					<h5>advertisement</h5>
-					<img src="{{ asset('images/adv.jpg') }}" alt="">
+					<img src="{{ asset('images/ads.png') }}" alt="">
 				</div>
 			</div>
 		</section>
