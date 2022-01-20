@@ -2,10 +2,11 @@
 
 @section('content')
 	<main>
+		@dump($comics)
 		<div class="comics container">
-		@foreach ($comics as $comic )
-			<a href="" class="magazine_card">
-				<div href="" class="top_card">
+		@foreach ($comics as $index => $comic )
+			<a href="{{ route('comic', ['id' => $index]) }}" class="magazine_card">
+				<div class="top_card">
 					<img src="{{ $comic['thumb'] }}" alt="{{$comic['title']}}">
 				</div>
 				<div class="bottom_card">
