@@ -93,7 +93,7 @@ header ul li a.active {
   border-bottom-color: #0182f9;
 }
 
-main {
+main.home_main {
   background-color: #1c1c1c;
   color: #fff;
   padding-block: 4rem 2rem;
@@ -134,6 +134,100 @@ main {
 .load_more {
   display: flex;
   justify-content: center;
+}
+
+.comic_main .hero_banner {
+  background-image: url("../images/jumbotron.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 400px;
+}
+.comic_main .hero_banner .inner_container .comic_cover {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  border: 1px solid #fff;
+}
+.comic_main .hero_banner .inner_container .comic_cover .view_gallery {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #01a9da;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-block: 3px;
+}
+.comic_main .hero_banner .inner_container .comic_cover .comic_type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px 5px;
+  text-transform: uppercase;
+  background-color: #01a9da;
+  color: #fff;
+  font-size: 0.8rem;
+}
+.comic_main .hero_banner .spacer {
+  height: 80px;
+  background-color: #0182f9;
+}
+.comic_main .content {
+  padding-block: 200px 3.5rem;
+}
+.comic_main .content .comic_details {
+  display: flex;
+  align-items: center;
+}
+.comic_main .content .comic_details .comic_data {
+  width: 65%;
+}
+.comic_main .content .comic_details .comic_data .title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.comic_main .content .comic_details .comic_data .stock {
+  background-color: #55ba5a;
+  display: flex;
+}
+.comic_main .content .comic_details .comic_data .stock .details {
+  padding: 0.7rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  width: 75%;
+  border-right: 1px solid #303030;
+}
+.comic_main .content .comic_details .comic_data .stock .details .price {
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: initial;
+}
+.comic_main .content .comic_details .comic_data .stock .details .price .dollars {
+  font-weight: bold;
+  opacity: 1;
+  color: #fff;
+}
+.comic_main .content .comic_details .comic_data .stock .details .available {
+  color: rgba(255, 255, 255, 0.7);
+}
+.comic_main .content .comic_details .comic_data .stock .availability {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: initial;
+  font-size: 0.95rem;
+  color: #fff;
+}
+.comic_main .content .comic_details .ads {
+  width: 35%;
+}
+.comic_main .inner_container {
+  width: 1020px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
 }
 
 .blue_stripe {

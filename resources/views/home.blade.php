@@ -1,8 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-	<main>
-		@dump($comics)
+	<main class="home_main">
 		<div class="comics container">
 		@foreach ($comics as $index => $comic )
 			<a href="{{ route('comic', ['id' => $index]) }}" class="magazine_card">

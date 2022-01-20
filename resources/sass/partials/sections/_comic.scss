@@ -1,0 +1,101 @@
+
+.comic_main {
+	.hero_banner {
+		background-image: url('../images/jumbotron.jpg');
+		background-size: cover;
+		background-position: top;
+		height: 400px;
+		.inner_container {
+			
+			.comic_cover {
+				position: absolute;
+				bottom: -60px;
+				left: 0;
+				border: 1px solid $clear-col;
+				.view_gallery {
+					width: 100%;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					background-color: $accent-light;
+					color: $clear-col;
+					text-align: center;
+					font-size: .9rem;
+					padding-block: 3px;
+				}
+				.comic_type {
+					position: absolute;
+					top: 0;
+					left: 0;
+					padding: 3px 5px;
+					text-transform: uppercase;
+					background-color: $accent-light;
+					color: $clear-col;
+					font-size: .8rem;
+				}
+			}
+		}
+		.spacer {
+			height: 80px;
+			background-color: $accent-col;
+		}
+	}
+	.content {
+		padding-block: 200px $sp-35;
+		.comic_details {
+			display: flex;
+			align-items: center;
+			.comic_data {
+				width: 65%;
+				.title {
+					font-size: $sp-30;
+					margin-bottom: $sp-15;
+				}
+				.stock {
+					background-color: $price-col;
+					display: flex;
+					.details {
+						padding: $sp-07 $sp-15;
+						display: flex;
+						justify-content: space-between;
+						font-weight: bold;
+						width: 75%;
+						border-right: 1px solid $secondary-col;
+						.price {
+							color: rgba($color: $clear-col, $alpha: .7);
+							text-transform: initial;
+							.dollars {
+								font-weight: bold;
+								opacity: 1;
+								color: $clear-col;
+							}
+						}
+						.available {
+							color: rgba($color: $clear-col, $alpha: .7);
+						}
+					}
+					.availability {
+						width: 25%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						text-transform: initial;
+						font-size: .95rem;
+						color: $clear-col;
+					}
+				}
+			}
+			.ads {
+				width: 35%;
+
+			}
+		}
+	}
+
+	.inner_container {
+		width: 1020px;
+		margin: 0 auto;
+		height: 100%;
+		position: relative;
+	}
+}

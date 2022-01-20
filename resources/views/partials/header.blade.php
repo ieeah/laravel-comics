@@ -5,7 +5,9 @@
 	<nav>
 		<ul>
 			<li><a
-					class="text-center {{Request::route()->getName() == 'comics' ? 'active' : ''}}"
+					class="text-center
+					{{Request::route()->getName() == 'comics' ? 'active' : ''}}
+					{{str_contains(Request::route()->getName(), 'comic') ? 'active' : ''}}"
 					href="{{ route('comics') }}"
 					>
 					Comics
